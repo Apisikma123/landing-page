@@ -65,7 +65,7 @@ function FeatureCard({ feature, index }: { feature: Feature; index: number }) {
           <span className="font-mono text-xs font-bold text-primary tracking-widest">
             /{indexStr}
           </span>
-          <div className="text-slate-400 group-hover:text-primary transition-colors">
+          <div className="text-muted group-hover:text-primary transition-colors">
             <FeatureIcon name={feature.icon} />
           </div>
         </div>

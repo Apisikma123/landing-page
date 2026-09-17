@@ -54,7 +54,7 @@ function FeaturedLayout({ items }: { items: Product[] }) {
           )}
           <div className="flex flex-col justify-center">
             {featured.badge && (
-              <span className="inline-block self-start mb-3.5 px-3 py-1 bg-slate-900 text-white text-xs font-semibold rounded-full tracking-wide shadow-sm">
+              <span className="inline-block self-start mb-3.5 px-3 py-1 bg-primary text-white text-xs font-semibold rounded-full tracking-wide shadow-sm">
                 {featured.badge}
               </span>
             )}
@@ -97,7 +97,7 @@ function ProductCard({ product }: { product: Product }) {
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
           {product.badge && (
-            <span className="absolute top-3 left-3 px-3 py-1 bg-slate-900/90 backdrop-blur-sm text-white text-xs font-semibold rounded-full shadow-sm tracking-wide">
+            <span className="absolute top-3 left-3 px-3 py-1 bg-primary text-white text-xs font-semibold rounded-full shadow-sm tracking-wide">
               {product.badge}
             </span>
           )}

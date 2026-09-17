@@ -47,7 +47,7 @@ function HeroSplit() {
           {hero.badge && (
             <div className="flex items-center gap-2.5 mb-6">
               <span className="h-[2px] w-6 bg-primary" />
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-700">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-foreground">
                 {hero.badge}
               </span>
             </div>
@@ -117,7 +117,7 @@ function HeroCentered() {
         {hero.badge && (
           <div className="inline-flex items-center gap-2.5 mb-6">
             <span className="h-[2px] w-6 bg-primary" />
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-700">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-foreground">
               {hero.badge}
             </span>
             <span className="h-[2px] w-6 bg-primary" />

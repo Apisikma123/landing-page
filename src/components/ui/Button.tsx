@@ -28,9 +28,9 @@ export function Button({
     outline:
       "border-2 border-primary text-primary hover:bg-primary hover:text-white",
     ghost: "text-foreground hover:bg-secondary",
-    white: "bg-white text-slate-900 hover:bg-slate-100 shadow-md",
+    white: "bg-white text-primary hover:bg-slate-50 shadow-md font-bold",
     whatsapp:
-      "bg-[#25D366] text-slate-950 font-bold hover:bg-[#20BA5A] shadow-md hover:shadow-lg active:scale-[0.98]",
+      "bg-[#16A34A] text-white font-bold hover:bg-[#15803D] shadow-md hover:shadow-lg active:scale-[0.98]",
   };
 
   const sizes = {

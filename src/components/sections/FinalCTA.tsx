@@ -33,8 +33,8 @@ export function FinalCTA() {
             size="lg"
             className="text-base md:text-lg px-8 py-4 font-bold shadow-xl hover:shadow-2xl rounded-full"
           >
-            <MessageCircle size={22} className="fill-current text-slate-950 shrink-0" />
-            <span className="text-slate-950">Chat via WhatsApp</span>
+            <MessageCircle size={22} className="fill-current text-white shrink-0" />
+            <span className="text-white">Chat via WhatsApp</span>
           </Button>
         </div>
       </div>
