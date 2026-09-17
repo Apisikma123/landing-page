@@ -30,7 +30,7 @@ export function Button({
     ghost: "text-foreground hover:bg-secondary",
     white: "bg-white text-slate-900 hover:bg-slate-100 shadow-md",
     whatsapp:
-      "bg-[#25D366] text-white hover:bg-[#20BA5A] shadow-md hover:shadow-lg",
+      "bg-[#25D366] text-slate-950 font-bold hover:bg-[#20BA5A] shadow-md hover:shadow-lg active:scale-[0.98]",
   };
 
   const sizes = {

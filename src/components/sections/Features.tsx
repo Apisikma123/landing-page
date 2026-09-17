@@ -58,11 +58,11 @@ export function Features() {
 
 function FeatureCard({ feature }: { feature: Feature }) {
   return (
-    <div className="p-6 rounded-xl border border-border bg-card hover:bg-card-hover transition-colors">
-      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+    <div className="p-7 rounded-2xl border border-slate-200/80 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.07)] hover:-translate-y-1 transition-all duration-300">
+      <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-700 mb-5">
         <FeatureIcon name={feature.icon} />
       </div>
-      <h3 className="text-base font-semibold text-foreground mb-2">
+      <h3 className="text-base font-semibold text-foreground mb-2 tracking-tight">
         {feature.title}
       </h3>
       <p className="text-sm text-muted leading-relaxed">

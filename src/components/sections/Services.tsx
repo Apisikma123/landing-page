@@ -54,16 +54,21 @@ export function Services() {
 
 function ServiceCard({ service }: { service: Service }) {
   return (
-    <div className="p-6 rounded-xl border border-border bg-card hover:bg-card-hover transition-colors">
-      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-        <ServiceIcon name={service.icon} />
+    <div className="p-7 rounded-2xl border border-slate-200/80 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.07)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-700 mb-5">
+          <ServiceIcon name={service.icon} />
+        </div>
+        <h3 className="text-base font-semibold text-foreground mb-2 tracking-tight">
+          {service.name}
+        </h3>
+        <p className="text-sm text-muted leading-relaxed">{service.description}</p>
       </div>
-      <h3 className="text-base font-semibold text-foreground mb-2">
-        {service.name}
-      </h3>
-      <p className="text-sm text-muted leading-relaxed">{service.description}</p>
       {service.price && (
-        <p className="mt-3 text-sm font-bold text-primary">{service.price}</p>
+        <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+          <span className="text-xs text-muted font-medium">Biaya Layanan</span>
+          <p className="text-sm font-bold text-primary">{service.price}</p>
+        </div>
       )}
     </div>
   );

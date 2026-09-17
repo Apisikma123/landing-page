@@ -78,7 +78,7 @@ function GalleryImage({
       <button
         onClick={openLightbox}
         className={cn(
-          "relative overflow-hidden rounded-lg w-full group cursor-pointer",
+          "relative overflow-hidden rounded-2xl w-full group cursor-pointer border border-slate-200/80 bg-slate-100 shadow-sm hover:shadow-md transition-all duration-300",
           masonry
             ? masonryAspects[index % masonryAspects.length] + " break-inside-avoid"
             : "aspect-square"
@@ -89,9 +89,14 @@ function GalleryImage({
           src={item.src}
           alt={item.alt}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-300"
+          className="object-cover"
           sizes="(max-width: 768px) 50vw, 33vw"
         />
+        <div className="absolute inset-0 bg-slate-950/0 group-hover:bg-slate-950/20 transition-colors duration-300 flex items-center justify-center pointer-events-none">
+          <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-3.5 py-1.5 rounded-full bg-white text-slate-900 text-xs font-semibold shadow-md">
+            Lihat Foto
+          </span>
+        </div>
       </button>
 
       {/* Lightbox */}

@@ -26,11 +26,11 @@ export const siteConfig: SiteConfig = {
   // Branding — adjust colors per client
   // --------------------------------------------------------------------------
   branding: {
-    primaryColor: "#2563EB",
+    primaryColor: "#1D4ED8",
     secondaryColor: "#F8FAFC",
-    accentColor: "#3B82F6",
+    accentColor: "#1E40AF",
     textColor: "#0F172A",
-    mutedColor: "#64748B",
+    mutedColor: "#475569",
     logo: "/images/logo.svg",
   },
 

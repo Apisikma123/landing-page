@@ -54,15 +54,15 @@ function FeaturedLayout({ items }: { items: Product[] }) {
           )}
           <div className="flex flex-col justify-center">
             {featured.badge && (
-              <span className="inline-block self-start mb-3 px-2.5 py-0.5 bg-accent text-white text-xs font-semibold rounded">
+              <span className="inline-block self-start mb-3.5 px-3 py-1 bg-slate-900 text-white text-xs font-semibold rounded-full tracking-wide shadow-sm">
                 {featured.badge}
               </span>
             )}
-            <h3 className="text-xl font-bold text-foreground">
+            <h3 className="text-xl font-bold text-foreground tracking-tight">
               {featured.name}
             </h3>
             {featured.description && (
-              <p className="mt-2 text-muted text-sm">{featured.description}</p>
+              <p className="mt-2 text-muted text-sm leading-relaxed">{featured.description}</p>
             )}
             {featured.price && (
               <p className="mt-3 text-lg font-bold text-primary">
@@ -86,9 +86,9 @@ function FeaturedLayout({ items }: { items: Product[] }) {
 
 function ProductCard({ product }: { product: Product }) {
   return (
-    <div className="rounded-xl border border-border bg-card overflow-hidden hover:shadow-md transition-shadow">
+    <div className="rounded-2xl border border-slate-200/80 bg-white overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.07)] hover:-translate-y-1 transition-all duration-300 flex flex-col">
       {product.image && (
-        <div className="relative aspect-[4/3]">
+        <div className="relative aspect-[4/3] bg-slate-100">
           <Image
             src={product.image}
             alt={product.name}
@@ -97,23 +97,25 @@ function ProductCard({ product }: { product: Product }) {
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
           {product.badge && (
-            <span className="absolute top-3 left-3 px-2.5 py-0.5 bg-accent text-white text-xs font-semibold rounded">
+            <span className="absolute top-3 left-3 px-3 py-1 bg-slate-900/90 backdrop-blur-sm text-white text-xs font-semibold rounded-full shadow-sm tracking-wide">
               {product.badge}
             </span>
           )}
         </div>
       )}
-      <div className="p-4">
-        <h3 className="text-base font-semibold text-foreground">
-          {product.name}
-        </h3>
-        {product.description && (
-          <p className="mt-1 text-sm text-muted line-clamp-2">
-            {product.description}
-          </p>
-        )}
+      <div className="p-5 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 className="text-base font-semibold text-foreground tracking-tight">
+            {product.name}
+          </h3>
+          {product.description && (
+            <p className="mt-1.5 text-sm text-muted line-clamp-2 leading-relaxed">
+              {product.description}
+            </p>
+          )}
+        </div>
         {product.price && (
-          <p className="mt-2 text-sm font-bold text-primary">{product.price}</p>
+          <p className="mt-4 text-sm font-bold text-primary">{product.price}</p>
         )}
       </div>
     </div>

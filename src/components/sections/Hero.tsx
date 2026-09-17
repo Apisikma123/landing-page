@@ -45,14 +45,15 @@ function HeroSplit() {
         {/* Text */}
         <div className="order-2 lg:order-1">
           {hero.badge && (
-            <span className="inline-block mb-4 px-3 py-1 bg-secondary text-accent text-xs font-semibold rounded-full">
+            <span className="inline-flex items-center gap-2 mb-5 px-3.5 py-1.5 bg-blue-50 border border-blue-200/80 text-blue-800 text-xs font-semibold rounded-full tracking-wide">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
               {hero.badge}
             </span>
           )}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight tracking-tight">
             {hero.title}
           </h1>
-          <p className="mt-4 text-base md:text-lg text-muted max-w-lg">
+          <p className="mt-4 text-base md:text-lg text-muted max-w-lg leading-relaxed">
             {hero.description}
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
@@ -73,29 +74,28 @@ function HeroSplit() {
                 size="lg"
               >
                 {hero.secondaryCTA.label}
-                {hero.secondaryCTA.type === "scroll" && (
-                  <ArrowDown size={16} />
-                )}
               </Button>
             )}
           </div>
         </div>
 
-        {/* Image */}
+        {/* Image with hardware double-bezel frame */}
         <div className="order-1 lg:order-2">
           {hero.image ? (
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image
-                src={hero.image}
-                alt={hero.title}
-                fill
-                priority
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+            <div className="p-2 rounded-3xl bg-slate-100/80 border border-slate-200/80 shadow-sm">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src={hero.image}
+                  alt={hero.title}
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
             </div>
           ) : (
-            <div className="aspect-[4/3] rounded-2xl bg-secondary" />
+            <div className="aspect-[4/3] rounded-3xl bg-secondary" />
           )}
         </div>
       </div>
@@ -113,11 +113,12 @@ function HeroCentered() {
     <section className="section-padding">
       <div className="container-narrow text-center max-w-3xl mx-auto">
         {hero.badge && (
-          <span className="inline-block mb-4 px-3 py-1 bg-secondary text-accent text-xs font-semibold rounded-full">
+          <span className="inline-flex items-center gap-2 mb-5 px-3.5 py-1.5 bg-blue-50 border border-blue-200/80 text-blue-800 text-xs font-semibold rounded-full tracking-wide">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
             {hero.badge}
           </span>
         )}
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight tracking-tight">
           {hero.title}
         </h1>
         <p className="mt-4 text-base md:text-lg text-muted max-w-2xl mx-auto">
