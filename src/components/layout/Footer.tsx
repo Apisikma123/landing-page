@@ -106,7 +106,7 @@ export function Footer() {
           <p>
             Created by{" "}
             <a
-              href="https://pagesale.id"
+              href="https://page-sale.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white font-medium transition-colors underline underline-offset-2"
