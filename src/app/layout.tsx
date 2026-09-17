@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp";
+import { DemoCustomizerBanner } from "@/components/ui/DemoCustomizerBanner";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -101,6 +102,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
       </head>
       <body className="min-h-full flex flex-col">
+        <DemoCustomizerBanner />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

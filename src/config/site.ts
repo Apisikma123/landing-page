@@ -45,7 +45,7 @@ export const siteConfig: SiteConfig = {
     accentColor: "#1E40AF",      // Warna hover / penekanan
     textColor: "#0F172A",        // Warna teks judul (foreground)
     mutedColor: "#475569",       // Warna teks sekunder / deskripsi
-    logo: "/images/logo.svg",    // Path logo di folder public/
+    logo: "/images/logo.webp",   // Path logo webp baru
   },
 
   // --------------------------------------------------------------------------
@@ -62,17 +62,17 @@ export const siteConfig: SiteConfig = {
   // --------------------------------------------------------------------------
   hero: {
     variant: "split",
-    badge: "Pilihan Terpercaya UMKM Indonesia",
-    title: "Produk Berkualitas & Pelayanan Ramah untuk Anda",
+    badge: "Bisa Kustom Warna, Logo & Katalog Usaha Anda",
+    title: "Website Profesional untuk Usaha Anda, Siap Terima Orderan 24 Jam",
     description:
-      "Kami siap melayani kebutuhan Anda dengan produk pilihan bermutu tinggi, pengerjaan rapi, harga bersahabat, dan pengiriman aman ke seluruh wilayah Indonesia.",
+      "Tampilkan produk unggulan & layanan terbaik Anda dengan website modern yang cepat, rapi, dan meyakinkan pelanggan. Seluruh warna tema, logo brand, nomor WhatsApp, dan katalog produk dapat disesuaikan 100% dengan bisnis Anda.",
     image: "/images/hero.svg",
     primaryCTA: {
       label: "Pesan via WhatsApp",
       type: "whatsapp",
     },
     secondaryCTA: {
-      label: "Lihat Produk & Layanan",
+      label: "Lihat Contoh Produk & Layanan",
       type: "scroll",
       scrollTo: "products",
     },
@@ -84,13 +84,13 @@ export const siteConfig: SiteConfig = {
   about: {
     title: "Tentang Usaha Kami",
     description:
-      "Berawal dari semangat memberikan karya dan pelayanan terbaik bagi masyarakat, kami terus berkomitmen menjaga mutu setiap produk dan kepuasan pelanggan. Bagi kami, kepercayaan dan kepuasan Anda adalah amanah utama kami dalam berusaha.",
+      "Website ini dirancang khusus untuk memajukan bisnis lokal Indonesia. Mulai dari kuliner, toko fashion, bengkel, salon, hingga jasa harian—semua warna tema, logo, foto profil, dan cerita usaha di bagian ini dapat disesuaikan sepenuhnya agar bisnis Anda tampil lebih terpercaya di mata pelanggan.",
     image: "/images/about.svg",
     highlights: [
-      "Produk & bahan pilihan berkualitas tinggi",
-      "Pelayanan ramah, cepat, dan terpercaya",
-      "Pemesanan mudah langsung via WhatsApp",
-      "Harga jujur, transparan, & bersahabat",
+      "Warna tema & identitas disesuaikan dengan brand Anda",
+      "Katalog produk lengkap dengan foto & harga jelas",
+      "Tombol WhatsApp langsung terhubung ke nomor admin",
+      "Tampilan responsif, cepat, & rapi di semua smartphone",
     ],
   },
 
@@ -127,8 +127,8 @@ export const siteConfig: SiteConfig = {
   // 9. Layanan (Services) — Universal untuk segala jenis jasa / paket pemesanan
   // --------------------------------------------------------------------------
   services: {
-    title: "Layanan yang Kami Sediakan",
-    subtitle: "Pilihan layanan profesional yang siap membantu mempermudah kebutuhan Anda",
+    title: "Contoh Layanan & Jasa",
+    subtitle: "Daftar layanan ini bisa disesuaikan dengan jenis jasa atau paket yang Anda sediakan untuk pelanggan",
     items: [
       {
         name: "Pemesanan Produk & Barang",
@@ -158,8 +158,8 @@ export const siteConfig: SiteConfig = {
   // 10. Katalog Produk (Products) — Universal untuk produk fisik / paket
   // --------------------------------------------------------------------------
   products: {
-    title: "Produk & Paket Pilihan",
-    subtitle: "Daftar produk favorit berkualitas tinggi yang siap dipesan hari ini",
+    title: "Contoh Katalog Produk & Paket",
+    subtitle: "Foto, nama varian, dan harga di bawah ini hanyalah contoh. Semuanya akan diganti dengan produk asli usaha Anda",
     variant: "grid",
     items: [
       {
@@ -208,31 +208,31 @@ export const siteConfig: SiteConfig = {
   // 11. Keunggulan (Features)
   // --------------------------------------------------------------------------
   features: {
-    title: "Kenapa Memilih Kami?",
-    subtitle: "Komitmen kami dalam memberikan kenyamanan dan kepuasan untuk setiap pelanggan",
+    title: "Keunggulan Website Usaha Anda",
+    subtitle: "Dirancang khusus agar calon pelanggan langsung percaya dan mudah order ke WhatsApp",
     items: [
       {
-        title: "Kualitas Terjamin",
+        title: "Bebas Pilih Warna Tema",
         description:
-          "Semua produk dan layanan dipersiapkan dengan teliti menggunakan standar mutu terbaik demi kepuasan Anda.",
-        icon: "shield",
+          "Warna dominan website bisa disesuaikan dengan warna logo atau identitas brand usaha Anda agar serasi dan keren.",
+        icon: "sparkles",
       },
       {
-        title: "Respon WhatsApp Cepat",
+        title: "Order Langsung ke WhatsApp",
         description:
-          "Admin ramah siap menjawab pertanyaan, konsultasi, dan membantu pesanan Anda kapan saja.",
+          "Pelanggan cukup klik tombol untuk langsung chat dengan admin Anda lengkap dengan rincian pesanan yang rapi.",
         icon: "clock",
       },
       {
-        title: "Harga Jujur & Bersahabat",
+        title: "Katalog & Foto Rapi",
         description:
-          "Penawaran harga terbaik yang transparan dan terjangkau tanpa ada biaya tersembunyi.",
-        icon: "award",
+          "Tampilkan foto produk asli, daftar paket, maupun menu layanan dengan harga transparan dan deskripsi jelas.",
+        icon: "shield",
       },
       {
-        title: "Dipercaya Pelanggan",
+        title: "Cepat & Nyaman di HP",
         description:
-          "Telah melayani banyak pelanggan dengan ulasan positif serta tingkat kepuasan dan repeat order yang tinggi.",
+          "Website sangat ringan dan responsif, nyaman dibuka dari smartphone pelanggan mana pun tanpa loading lama.",
         icon: "thumbsup",
       },
     ],
@@ -321,8 +321,8 @@ export const siteConfig: SiteConfig = {
   // 15. Ajakan Bertindak Terakhir (Final CTA)
   // --------------------------------------------------------------------------
   finalCTA: {
-    title: "Punya Pertanyaan atau Mau Langsung Pesan?",
+    title: "Siap Tampilkan Usaha Anda Seperti Ini?",
     description:
-      "Hubungi kami sekarang melalui WhatsApp. Tim kami siap merespon cepat, memberikan rekomendasi terbaik, dan membantu pesanan Anda.",
+      "Dapatkan website profesional lengkap dengan logo brand Anda, warna pilihan Anda, katalog produk, dan tombol WhatsApp siap terima pesanan 24 jam. Hubungi kami untuk konsultasi sekarang!",
   },
 };

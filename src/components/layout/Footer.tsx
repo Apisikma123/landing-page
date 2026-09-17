@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/site";
 import { generateWhatsAppUrl } from "@/lib/whatsapp";
 
 export function Footer() {
-  const { business, contact, location, openingHours } = siteConfig;
+  const { business, contact, location, openingHours, branding } = siteConfig;
   const waUrl = generateWhatsAppUrl(contact.whatsapp, contact.whatsappMessage);
   const y = new Date().getFullYear();
 
@@ -13,10 +13,19 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-3">
-              {business.name}
-            </h3>
-            <p className="text-sm leading-relaxed max-w-xs">
+            <div className="flex items-center gap-2.5 mb-3">
+              {branding.logo && (
+                <img
+                  src={branding.logo}
+                  alt={business.name}
+                  className="h-8 w-8 object-contain rounded-full bg-white p-0.5"
+                />
+              )}
+              <h3 className="text-lg font-bold text-white leading-none">
+                {business.name}
+              </h3>
+            </div>
+            <p className="text-sm leading-relaxed max-w-xs text-white/70">
               {business.tagline}
             </p>
           </div>

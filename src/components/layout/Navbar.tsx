@@ -30,18 +30,22 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <nav className="container-narrow flex items-center justify-between px-5 h-16 md:h-[4.25rem]">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 shrink-0">
-          {branding.logo ? (
+        <a href="#" className="flex items-center gap-2.5 shrink-0 group">
+          {branding.logo && (
             <img
               src={branding.logo}
               alt={business.name}
-              className="h-8 w-auto"
+              className="h-9 w-9 object-contain rounded-full drop-shadow-sm transition-transform group-hover:scale-105"
             />
-          ) : (
-            <span className="text-lg font-bold text-foreground">
+          )}
+          <div className="flex flex-col">
+            <span className="text-base md:text-lg font-bold text-foreground tracking-tight leading-tight">
               {business.name}
             </span>
-          )}
+            <span className="text-[10px] text-muted font-medium">
+              {business.category ?? "Template UMKM Indonesia"}
+            </span>
+          </div>
         </a>
 
         {/* Desktop nav */}
