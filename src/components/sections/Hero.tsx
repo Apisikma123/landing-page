@@ -45,10 +45,12 @@ function HeroSplit() {
         {/* Text */}
         <div className="order-2 lg:order-1">
           {hero.badge && (
-            <span className="inline-flex items-center gap-2 mb-5 px-3.5 py-1.5 bg-blue-50 border border-blue-200/80 text-blue-800 text-xs font-semibold rounded-full tracking-wide">
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-              {hero.badge}
-            </span>
+            <div className="flex items-center gap-2.5 mb-6">
+              <span className="h-[2px] w-6 bg-primary" />
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-700">
+                {hero.badge}
+              </span>
+            </div>
           )}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight tracking-tight">
             {hero.title}
@@ -113,10 +115,13 @@ function HeroCentered() {
     <section className="section-padding">
       <div className="container-narrow text-center max-w-3xl mx-auto">
         {hero.badge && (
-          <span className="inline-flex items-center gap-2 mb-5 px-3.5 py-1.5 bg-blue-50 border border-blue-200/80 text-blue-800 text-xs font-semibold rounded-full tracking-wide">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-            {hero.badge}
-          </span>
+          <div className="inline-flex items-center gap-2.5 mb-6">
+            <span className="h-[2px] w-6 bg-primary" />
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-700">
+              {hero.badge}
+            </span>
+            <span className="h-[2px] w-6 bg-primary" />
+          </div>
         )}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight tracking-tight">
           {hero.title}
@@ -183,9 +188,13 @@ function HeroImageBg() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 container-narrow px-5 py-20 text-center max-w-3xl mx-auto">
         {hero.badge && (
-          <span className="inline-block mb-4 px-3 py-1 bg-white/20 text-white text-xs font-semibold rounded-full backdrop-blur-sm">
-            {hero.badge}
-          </span>
+          <div className="inline-flex items-center gap-2.5 mb-6">
+            <span className="h-[2px] w-6 bg-white/70" />
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white">
+              {hero.badge}
+            </span>
+            <span className="h-[2px] w-6 bg-white/70" />
+          </div>
         )}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
           {hero.title}
