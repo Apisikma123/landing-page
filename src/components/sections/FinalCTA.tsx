@@ -21,15 +21,16 @@ export function FinalCTA() {
         <p className="mt-4 text-base md:text-lg text-white/80 max-w-xl mx-auto">
           {desc}
         </p>
-        <div className="mt-8">
+        <div className="mt-8 flex justify-center">
           <Button
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
+            variant="whatsapp"
             size="lg"
-            className="bg-white text-primary hover:bg-white/90"
+            className="text-base md:text-lg px-8 py-3.5 font-bold shadow-lg hover:scale-105 transition-transform"
           >
-            <MessageCircle size={18} />
+            <MessageCircle size={22} className="fill-current" />
             Chat via WhatsApp
           </Button>
         </div>

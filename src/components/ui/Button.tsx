@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "outline" | "ghost";
+  variant?: "primary" | "secondary" | "outline" | "ghost" | "white" | "whatsapp";
   size?: "sm" | "md" | "lg";
   asChild?: boolean;
   href?: string;
@@ -20,14 +20,17 @@ export function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center font-semibold rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2";
+    "inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2";
 
   const variants = {
-    primary: "bg-primary text-white hover:bg-primary/90",
+    primary: "bg-primary text-white hover:bg-primary/90 shadow-sm",
     secondary: "bg-secondary text-foreground hover:bg-secondary/80",
     outline:
       "border-2 border-primary text-primary hover:bg-primary hover:text-white",
     ghost: "text-foreground hover:bg-secondary",
+    white: "bg-white text-slate-900 hover:bg-slate-100 shadow-md",
+    whatsapp:
+      "bg-[#25D366] text-white hover:bg-[#20BA5A] shadow-md hover:shadow-lg",
   };
 
   const sizes = {
