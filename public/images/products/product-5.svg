@@ -1,5 +1,7 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-  <rect fill="#FFF7ED" width="800" height="600"/>
-  <text x="400" y="280" font-family="system-ui" font-size="24" fill="#7C2D12" text-anchor="middle">Product 5</text>
-  <text x="400" y="320" font-family="system-ui" font-size="14" fill="#78716C" text-anchor="middle">Replace with actual image</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect fill="#F1F5F9" width="600" height="600"/>
+  <circle cx="300" cy="260" r="36" fill="#DBEAFE"/>
+  <circle cx="300" cy="260" r="16" fill="#2563EB"/>
+  <text x="300" y="325" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#0F172A" text-anchor="middle">Produk / Paket 5</text>
+  <text x="300" y="355" font-family="system-ui, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Ganti dengan foto produk asli</text>
 </svg>

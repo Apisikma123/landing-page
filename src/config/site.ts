@@ -8,29 +8,29 @@
 import type { SiteConfig } from "./types";
 
 export const siteConfig: SiteConfig = {
-  template: "food",
+  template: "business",
   lang: "id",
 
   // --------------------------------------------------------------------------
   // Business Info
   // --------------------------------------------------------------------------
   business: {
-    name: "Demo Bakery",
-    category: "Bakery & Pastry",
-    tagline: "Roti & Kue Segar Setiap Hari",
+    name: "Demo Usaha Mandiri",
+    category: "Layanan & Produk Bisnis",
+    tagline: "Solusi Produk & Layanan Profesional untuk Anda",
     description:
-      "Demo Bakery menyajikan roti artisan dan kue buatan tangan dengan bahan-bahan pilihan. Dibuat fresh setiap hari untuk memastikan kualitas terbaik sampai di tangan Anda.",
+      "Kami menyediakan berbagai pilihan produk berkualitas dan layanan profesional terpercaya untuk mendukung kebutuhan Anda dengan pengerjaan cepat dan mutu terbaik.",
   },
 
   // --------------------------------------------------------------------------
   // Branding — adjust colors per client
   // --------------------------------------------------------------------------
   branding: {
-    primaryColor: "#7C2D12",
-    secondaryColor: "#FFF7ED",
-    accentColor: "#EA580C",
-    textColor: "#1C1917",
-    mutedColor: "#78716C",
+    primaryColor: "#2563EB",
+    secondaryColor: "#F8FAFC",
+    accentColor: "#3B82F6",
+    textColor: "#0F172A",
+    mutedColor: "#64748B",
     logo: "/images/logo.svg",
   },
 
@@ -38,7 +38,7 @@ export const siteConfig: SiteConfig = {
   // SEO
   // --------------------------------------------------------------------------
   seo: {
-    siteUrl: "https://demo-bakery.vercel.app",
+    siteUrl: "https://demo-landing-page.vercel.app",
     ogImage: "/images/og-image.svg",
   },
 
@@ -47,19 +47,19 @@ export const siteConfig: SiteConfig = {
   // --------------------------------------------------------------------------
   hero: {
     variant: "split",
-    badge: "Baru Buka Cabang ke-2!",
-    title: "Roti Artisan & Kue Segar Setiap Hari",
+    badge: "Solusi Usaha & Layanan Terpercaya",
+    title: "Produk Berkualitas & Layanan Profesional Terbaik",
     description:
-      "Dibuat dengan cinta menggunakan bahan-bahan berkualitas. Pesan sekarang untuk pengalaman rasa yang tak terlupakan.",
+      "Menghadirkan produk unggulan dan solusi layanan terpadu dengan standar kualitas tinggi untuk kebutuhan pribadi maupun bisnis Anda.",
     image: "/images/hero.svg",
     primaryCTA: {
-      label: "Pesan via WhatsApp",
+      label: "Konsultasi via WhatsApp",
       type: "whatsapp",
     },
     secondaryCTA: {
-      label: "Lihat Menu",
+      label: "Lihat Layanan",
       type: "scroll",
-      scrollTo: "products",
+      scrollTo: "services",
     },
   },
 
@@ -67,15 +67,15 @@ export const siteConfig: SiteConfig = {
   // About
   // --------------------------------------------------------------------------
   about: {
-    title: "Tentang Demo Bakery",
+    title: "Tentang Kami",
     description:
-      "Berawal dari dapur rumah, Demo Bakery kini telah melayani ribuan pelanggan setia. Kami percaya bahwa roti dan kue terbaik dibuat dengan bahan pilihan dan proses yang penuh perhatian.",
+      "Kami adalah penyedia produk dan layanan profesional yang berdedikasi memberikan hasil terbaik bagi setiap pelanggan. Dengan komitmen pada kualitas, kecepatan, dan kepuasan pelanggan, kami siap menjadi mitra andalan Anda.",
     image: "/images/about.svg",
     highlights: [
-      "Bahan premium berkualitas",
-      "Dibuat fresh setiap hari",
-      "Tanpa pengawet buatan",
-      "Resep original",
+      "Layanan profesional & bergaransi",
+      "Kualitas produk terjamin",
+      "Respon cepat via WhatsApp",
+      "Harga transparan & bersahabat",
     ],
   },
 
@@ -84,71 +84,103 @@ export const siteConfig: SiteConfig = {
   // --------------------------------------------------------------------------
   contact: {
     whatsapp: "6281234567890",
-    whatsappMessage: "Halo Demo Bakery, saya ingin pesan...",
-    instagram: "demobakery",
-    email: "hello@demobakery.com",
+    whatsappMessage: "Halo, saya ingin konsultasi mengenai produk dan layanan...",
+    instagram: "demousaha",
+    email: "halo@demousaha.com",
   },
 
   // --------------------------------------------------------------------------
   // Location
   // --------------------------------------------------------------------------
   location: {
-    address: "Jl. Contoh No. 123, Jakarta Selatan",
-    googleMapsUrl: "https://maps.google.com/?q=Demo+Bakery",
+    address: "Jl. Bisnis Mandiri No. 123, Jakarta",
+    googleMapsUrl: "https://maps.google.com/?q=Jakarta",
   },
 
   // --------------------------------------------------------------------------
   // Opening Hours
   // --------------------------------------------------------------------------
   openingHours: [
-    { days: "Senin - Jumat", hours: "07:00 - 21:00" },
-    { days: "Sabtu - Minggu", hours: "08:00 - 22:00" },
+    { days: "Senin - Jumat", hours: "08:00 - 17:00" },
+    { days: "Sabtu", hours: "08:00 - 14:00" },
   ],
+
+  // --------------------------------------------------------------------------
+  // Services
+  // --------------------------------------------------------------------------
+  services: {
+    title: "Layanan Unggulan",
+    subtitle: "Pilihan layanan profesional yang siap membantu Anda",
+    items: [
+      {
+        name: "Konsultasi & Perencanaan",
+        description:
+          "Analisis kebutuhan dan rekomendasi solusi terbaik yang terarah untuk hasil optimal.",
+        price: "Mulai Rp 150.000",
+        icon: "sparkles",
+      },
+      {
+        name: "Pengerjaan & Kustomisasi",
+        description:
+          "Pengerjaan tepat waktu dengan standar mutu tinggi serta hasil yang rapi.",
+        price: "Mulai Rp 350.000",
+        icon: "settings",
+      },
+      {
+        name: "Dukungan & Perawatan",
+        description:
+          "Layanan berkala dan dukungan purna jual responsif untuk memastikan kepuasan Anda.",
+        price: "Mulai Rp 200.000",
+        icon: "wrench",
+      },
+    ],
+  },
 
   // --------------------------------------------------------------------------
   // Products
   // --------------------------------------------------------------------------
   products: {
-    title: "Menu Favorit",
-    subtitle: "Pilihan roti dan kue terlaris kami",
+    title: "Produk Pilihan",
+    subtitle: "Koleksi produk unggulan siap pakai dengan mutu terbaik",
     variant: "grid",
     items: [
       {
-        name: "Sourdough Loaf",
-        description: "Roti sourdough klasik dengan tekstur renyah di luar, lembut di dalam.",
-        price: "Rp 45.000",
+        name: "Paket Starter",
+        description: "Pilihan lengkap dan ekonomis untuk kebutuhan dasar Anda.",
+        price: "Rp 150.000",
         image: "/images/products/product-1.svg",
+        badge: "Paling Populer",
+      },
+      {
+        name: "Paket Profesional",
+        description: "Solusi lengkap dengan fitur dan spesifikasi lebih menyeluruh.",
+        price: "Rp 350.000",
+        image: "/images/products/product-2.svg",
         badge: "Best Seller",
       },
       {
-        name: "Croissant Butter",
-        description: "Croissant berlapis mentega premium, dipanggang sempurna.",
-        price: "Rp 25.000",
-        image: "/images/products/product-2.svg",
-      },
-      {
-        name: "Cinnamon Roll",
-        description: "Roll kayu manis dengan cream cheese frosting.",
-        price: "Rp 30.000",
+        name: "Paket Kustom",
+        description: "Penyesuaian spesifikasi sesuai dengan kebutuhan unik Anda.",
+        price: "Rp 500.000",
         image: "/images/products/product-3.svg",
+        badge: "Fleksibel",
       },
       {
-        name: "Chocolate Lava Cake",
-        description: "Kue cokelat dengan lelehan lava di dalamnya.",
-        price: "Rp 35.000",
+        name: "Produk Unggulan A",
+        description: "Material berkualitas tinggi dengan daya tahan optimal.",
+        price: "Rp 120.000",
         image: "/images/products/product-4.svg",
-        badge: "New",
       },
       {
-        name: "Banana Bread",
-        description: "Roti pisang lembut dengan topping walnut.",
-        price: "Rp 28.000",
+        name: "Produk Unggulan B",
+        description: "Desain fungsional untuk menunjang aktivitas sehari-hari.",
+        price: "Rp 180.000",
         image: "/images/products/product-5.svg",
       },
       {
-        name: "Red Velvet Cupcake",
-        description: "Cupcake red velvet dengan cream cheese topping.",
-        price: "Rp 22.000",
+        name: "Produk Unggulan C",
+        description: "Kombinasi performa andal dengan harga kompetitif.",
+        price: "Rp 220.000",
         image: "/images/products/product-6.svg",
       },
     ],
@@ -158,28 +190,28 @@ export const siteConfig: SiteConfig = {
   // Features / Keunggulan
   // --------------------------------------------------------------------------
   features: {
-    title: "Kenapa Demo Bakery?",
-    subtitle: "Yang membuat kami berbeda",
+    title: "Kenapa Memilih Kami?",
+    subtitle: "Komitmen kami dalam memberikan pelayanan terbaik",
     items: [
       {
-        title: "Bahan Premium",
-        description: "Kami hanya menggunakan tepung, mentega, dan bahan-bahan pilihan berkualitas tinggi.",
-        icon: "wheat",
+        title: "Kualitas Terjamin",
+        description: "Setiap produk dan layanan melewati standar kontrol kualitas yang ketat.",
+        icon: "shield",
       },
       {
-        title: "Fresh Setiap Hari",
-        description: "Semua produk dibuat fresh setiap pagi, tanpa stok kemarin.",
+        title: "Respon Cepat",
+        description: "Tim kami siap merespon pertanyaan dan pemesanan langsung via WhatsApp.",
         icon: "clock",
       },
       {
-        title: "Tanpa Pengawet",
-        description: "Tidak ada pengawet buatan atau bahan kimia berbahaya.",
-        icon: "leaf",
+        title: "Tenaga Profesional",
+        description: "Dikerjakan oleh tim yang berpengalaman dan berdedikasi di bidangnya.",
+        icon: "award",
       },
       {
-        title: "Pengiriman Cepat",
-        description: "Tersedia delivery untuk area Jakarta Selatan dan sekitarnya.",
-        icon: "truck",
+        title: "Pelanggan Terpuaskan",
+        description: "Telah dipercaya oleh banyak pelanggan dengan tingkat kepuasan tinggi.",
+        icon: "thumbsup",
       },
     ],
   },
@@ -188,16 +220,16 @@ export const siteConfig: SiteConfig = {
   // Gallery
   // --------------------------------------------------------------------------
   gallery: {
-    title: "Galeri",
-    subtitle: "Lihat hasil karya kami",
+    title: "Galeri & Portofolio",
+    subtitle: "Dokumentasi hasil pengerjaan dan produk kami",
     variant: "grid",
     items: [
-      { src: "/images/gallery/gallery-1.svg", alt: "Aneka roti artisan" },
-      { src: "/images/gallery/gallery-2.svg", alt: "Proses pembuatan roti" },
-      { src: "/images/gallery/gallery-3.svg", alt: "Interior toko" },
-      { src: "/images/gallery/gallery-4.svg", alt: "Kue tart custom" },
-      { src: "/images/gallery/gallery-5.svg", alt: "Hampers roti" },
-      { src: "/images/gallery/gallery-6.svg", alt: "Suasana toko" },
+      { src: "/images/gallery/gallery-1.svg", alt: "Dokumentasi pengerjaan 1" },
+      { src: "/images/gallery/gallery-2.svg", alt: "Dokumentasi proses kerja 2" },
+      { src: "/images/gallery/gallery-3.svg", alt: "Dokumentasi workshop 3" },
+      { src: "/images/gallery/gallery-4.svg", alt: "Hasil produk siap kirim 4" },
+      { src: "/images/gallery/gallery-5.svg", alt: "Konsultasi bersama klien 5" },
+      { src: "/images/gallery/gallery-6.svg", alt: "Serah terima pesanan 6" },
     ],
   },
 
@@ -206,24 +238,25 @@ export const siteConfig: SiteConfig = {
   // --------------------------------------------------------------------------
   testimonials: {
     title: "Kata Pelanggan",
-    subtitle: "Apa yang mereka katakan tentang kami",
+    subtitle: "Ulasan dari mereka yang telah mempercayakan kebutuhan kepada kami",
     items: [
       {
-        name: "Rina S.",
+        name: "Budi Santoso",
+        role: "Pemilik Usaha",
+        content:
+          "Pelayanan sangat profesional, komunikasi cepat dan hasilnya sesuai dengan ekspektasi. Sangat membantu usaha kami!",
+      },
+      {
+        name: "Dewi Lestari",
         role: "Pelanggan Setia",
         content:
-          "Roti sourdough-nya juara! Sudah langganan dari awal buka. Teksturnya pas, rasanya authentic.",
+          "Pesan lewat WhatsApp sangat praktis dan cepat ditanggapi. Kualitasnya terbukti bagus dan rapi.",
       },
       {
-        name: "Budi P.",
-        role: "Food Blogger",
+        name: "Reza Pratama",
+        role: "Klien Profesional",
         content:
-          "Croissant terenak yang pernah saya coba di Jakarta. Berlapis sempurna dan butternya terasa banget.",
-      },
-      {
-        name: "Maya L.",
-        content:
-          "Sering pesan untuk acara kantor. Pelayanannya cepat dan rotinya selalu fresh. Recommended!",
+          "Sudah repeat order beberapa kali. Selalu konsisten dalam kualitas, tepat waktu, dan sangat ramah.",
       },
     ],
   },
@@ -235,24 +268,24 @@ export const siteConfig: SiteConfig = {
     title: "Pertanyaan Umum",
     items: [
       {
-        question: "Apakah bisa pesan untuk acara?",
+        question: "Bagaimana cara melakukan pemesanan atau konsultasi?",
         answer:
-          "Tentu! Kami menerima pesanan untuk acara seperti ulang tahun, arisan, meeting, dan lainnya. Hubungi kami via WhatsApp untuk detail lebih lanjut.",
+          "Cukup klik tombol WhatsApp di website ini untuk terhubung langsung dengan kami. Tim kami akan dengan senang hati membantu Anda.",
       },
       {
-        question: "Berapa minimal order untuk delivery?",
+        question: "Apakah bisa melakukan kustomisasi sesuai kebutuhan?",
         answer:
-          "Minimal order untuk delivery adalah Rp 100.000. Gratis ongkir untuk area Jakarta Selatan dalam radius 5 km.",
+          "Tentu saja. Kami melayani permintaan kustom baik untuk produk maupun spesifikasi layanan.",
       },
       {
-        question: "Apakah ada produk yang bebas gluten?",
+        question: "Berapa lama estimasi pengerjaan atau pengiriman?",
         answer:
-          "Saat ini kami belum menyediakan menu bebas gluten, namun kami terus mengembangkan variasi menu baru.",
+          "Waktu pengerjaan disesuaikan dengan jenis produk atau layanan yang dipilih, umumnya 1-3 hari kerja.",
       },
       {
-        question: "Bagaimana cara memesan?",
+        question: "Metode pembayaran apa saja yang didukung?",
         answer:
-          "Anda bisa langsung datang ke toko kami atau pesan via WhatsApp. Untuk pesanan besar, disarankan H-2.",
+          "Kami mendukung transfer bank lokal, virtual account, dan QRIS untuk kemudahan transaksi Anda.",
       },
     ],
   },
@@ -261,8 +294,8 @@ export const siteConfig: SiteConfig = {
   // Final CTA
   // --------------------------------------------------------------------------
   finalCTA: {
-    title: "Siap Memesan?",
+    title: "Siap Memulai Kebutuhan Anda?",
     description:
-      "Hubungi kami sekarang untuk memesan roti dan kue segar favorit Anda.",
+      "Hubungi kami sekarang melalui WhatsApp untuk konsultasi gratis dan dapatkan penawaran terbaik.",
   },
 };

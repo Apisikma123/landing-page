@@ -1,5 +1,6 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-  <rect fill="#FFF7ED" width="800" height="600"/>
-  <text x="400" y="280" font-family="system-ui" font-size="24" fill="#7C2D12" text-anchor="middle">Logo</text>
-  <text x="400" y="320" font-family="system-ui" font-size="14" fill="#78716C" text-anchor="middle">Replace with actual image</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50" viewBox="0 0 200 50">
+  <rect fill="transparent" width="200" height="50"/>
+  <rect x="0" y="10" width="30" height="30" rx="8" fill="#2563EB"/>
+  <path d="M9 25 L14 30 L22 18" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="32" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0F172A">DEMO USAHA</text>
 </svg>
