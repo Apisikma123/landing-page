@@ -2,5 +2,5 @@
   <rect fill="transparent" width="200" height="50"/>
   <rect x="0" y="10" width="30" height="30" rx="8" fill="#2563EB"/>
   <path d="M9 25 L14 30 L22 18" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="40" y="32" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0F172A">DEMO USAHA</text>
+  <text x="40" y="32" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#0F172A">USAHA MANDIRI</text>
 </svg>

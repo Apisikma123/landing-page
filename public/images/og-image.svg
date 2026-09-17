@@ -2,6 +2,6 @@
   <rect fill="#F1F5F9" width="1200" height="630"/>
   <circle cx="600" cy="275" r="36" fill="#DBEAFE"/>
   <circle cx="600" cy="275" r="16" fill="#2563EB"/>
-  <text x="600" y="340" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#0F172A" text-anchor="middle">Demo Usaha Mandiri</text>
-  <text x="600" y="370" font-family="system-ui, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Template Landing Page Bisnis & UMKM Universal</text>
+  <text x="600" y="340" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#0F172A" text-anchor="middle">Usaha Mandiri Nusantara</text>
+  <text x="600" y="372" font-family="system-ui, sans-serif" font-size="15" fill="#64748B" text-anchor="middle">Template Landing Page Universal untuk Seluruh UMKM Indonesia</text>
 </svg>
