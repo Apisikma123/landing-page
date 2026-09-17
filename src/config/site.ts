@@ -93,8 +93,10 @@ export const siteConfig: SiteConfig = {
   // Location
   // --------------------------------------------------------------------------
   location: {
-    address: "Jl. Bisnis Mandiri No. 123, Jakarta",
-    googleMapsUrl: "https://maps.google.com/?q=Jakarta",
+    address: "Jl. Bisnis Mandiri No. 123, Jakarta Selatan, Indonesia",
+    googleMapsUrl: "https://maps.google.com/?q=Jakarta+Indonesia",
+    embedUrl:
+      "https://maps.google.com/maps?q=Jakarta,%20Indonesia&t=&z=13&ie=UTF8&iwloc=&output=embed",
   },
 
   // --------------------------------------------------------------------------
