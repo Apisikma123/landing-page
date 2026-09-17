@@ -24,14 +24,14 @@ const jakarta = Plus_Jakarta_Sans({
 const { business, seo, branding } = siteConfig;
 
 export const metadata: Metadata = {
-  title: `${business.name} — ${business.tagline}`,
+  title: business.name,
   description: business.description,
   ...(seo?.siteUrl && {
     metadataBase: new URL(seo.siteUrl),
     alternates: { canonical: "/" },
   }),
   openGraph: {
-    title: `${business.name} — ${business.tagline}`,
+    title: business.name,
     description: business.description,
     type: "website",
     ...(seo?.siteUrl && { url: seo.siteUrl }),

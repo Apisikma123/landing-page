@@ -5,6 +5,7 @@ import { generateWhatsAppUrl } from "@/lib/whatsapp";
 export function Footer() {
   const { business, contact, location, openingHours } = siteConfig;
   const waUrl = generateWhatsAppUrl(contact.whatsapp, contact.whatsappMessage);
+  const y = new Date().getFullYear();
 
   return (
     <footer className="bg-foreground text-white/80">
@@ -89,9 +90,21 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 pt-6 border-t border-white/10 text-center text-xs text-white/50">
-          &copy; {new Date().getFullYear()} {business.name}. All rights
-          reserved.
+        <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
+          <p>
+            &copy; {y} {business.name}. All rights reserved.
+          </p>
+          <p>
+            Created by{" "}
+            <a
+              href="https://pagesale.id"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/70 hover:text-white font-medium transition-colors underline underline-offset-2"
+            >
+              PageSale
+            </a>
+          </p>
         </div>
       </div>
     </footer>
