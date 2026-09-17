@@ -31,7 +31,7 @@
   --color-card: var(--card);
   --color-card-hover: var(--card-hover);
   --font-sans: var(--font-sans), system-ui, sans-serif;
-  --font-heading: var(--font-sans), system-ui, sans-serif;
+  --font-heading: var(--font-heading), system-ui, sans-serif;
 }
 
 /* ========================================================================== */
@@ -56,10 +56,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-heading), system-ui, sans-serif;
   line-height: 1.2;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 /* ========================================================================== */

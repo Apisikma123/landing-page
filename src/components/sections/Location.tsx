@@ -49,11 +49,11 @@ export function Location() {
                 <p className="font-semibold text-foreground text-base">
                   Jam Operasional
                 </p>
-                <ul className="mt-2 space-y-1.5 divide-y divide-border/60">
+                <ul className="mt-3 divide-y divide-border/60">
                   {openingHours.map((oh) => (
                     <li
                       key={oh.days}
-                      className="text-sm text-muted flex justify-between pt-1.5 first:pt-0"
+                      className="text-sm text-muted flex justify-between py-2.5 first:pt-1 last:pb-1"
                     >
                       <span>{oh.days}</span>
                       <span className="text-foreground font-medium">
