@@ -79,12 +79,6 @@ function HeroSplit() {
               </Button>
             )}
           </div>
-
-          {/* Customization Callout */}
-          <div className="mt-5 flex items-center gap-2 text-xs font-medium text-muted">
-            <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
-            <span>Warna tema, logo, foto produk, & nomor WhatsApp bisa disesuaikan 100% untuk usaha Anda</span>
-          </div>
         </div>
 
         {/* Image with hardware double-bezel frame */}
@@ -105,33 +99,6 @@ function HeroSplit() {
           ) : (
             <div className="aspect-[4/3] rounded-3xl bg-secondary" />
           )}
-        </div>
-      </div>
-
-      {/* Universal Industry Showcase Bar */}
-      <div className="container-narrow mt-12 pt-8 border-t border-border">
-        <p className="text-xs font-bold uppercase tracking-wider text-muted mb-3 flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-          Cocok Disesuaikan untuk Berbagai Bidang Usaha:
-        </p>
-        <div className="flex flex-wrap gap-2">
-          {[
-            "🍲 Kuliner & F&B",
-            "🔧 Bengkel & Servis AC",
-            "👗 Toko Fashion & Ritel",
-            "✂️ Salon & Barbershop",
-            "🧺 Laundry & Jasa Harian",
-            "📦 Toko Kelontong & Sembako",
-            "🪵 Mebel & Kerajinan",
-            "💼 Jasa Profesional & Konsultan",
-          ].map((tag) => (
-            <span
-              key={tag}
-              className="px-3 py-1 rounded-full bg-secondary text-foreground text-xs font-medium border border-border/60 hover:border-primary transition-colors"
-            >
-              {tag}
-            </span>
-          ))}
         </div>
       </div>
     </section>

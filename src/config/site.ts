@@ -62,17 +62,17 @@ export const siteConfig: SiteConfig = {
   // --------------------------------------------------------------------------
   hero: {
     variant: "split",
-    badge: "Bisa Kustom Warna, Logo & Katalog Usaha Anda",
-    title: "Website Profesional untuk Usaha Anda, Siap Terima Orderan 24 Jam",
+    badge: "Produk & Layanan Terpercaya",
+    title: "Kualitas Terbaik untuk Setiap Kebutuhan Anda",
     description:
-      "Tampilkan produk unggulan & layanan terbaik Anda dengan website modern yang cepat, rapi, dan meyakinkan pelanggan. Seluruh warna tema, logo brand, nomor WhatsApp, dan katalog produk dapat disesuaikan 100% dengan bisnis Anda.",
+      "Kami siap melayani kebutuhan Anda dengan produk pilihan bermutu tinggi, pelayanan ramah, harga bersahabat, dan pengiriman aman ke seluruh Indonesia.",
     image: "/images/hero.svg",
     primaryCTA: {
-      label: "Pesan via WhatsApp",
+      label: "Hubungi via WhatsApp",
       type: "whatsapp",
     },
     secondaryCTA: {
-      label: "Lihat Contoh Produk & Layanan",
+      label: "Lihat Produk & Layanan",
       type: "scroll",
       scrollTo: "products",
     },
@@ -82,15 +82,15 @@ export const siteConfig: SiteConfig = {
   // 5. Tentang Kami (About Section)
   // --------------------------------------------------------------------------
   about: {
-    title: "Tentang Usaha Kami",
+    title: "Tentang Kami",
     description:
-      "Website ini dirancang khusus untuk memajukan bisnis lokal Indonesia. Mulai dari kuliner, toko fashion, bengkel, salon, hingga jasa harian—semua warna tema, logo, foto profil, dan cerita usaha di bagian ini dapat disesuaikan sepenuhnya agar bisnis Anda tampil lebih terpercaya di mata pelanggan.",
+      "Berawal dari komitmen memberikan mutu dan pelayanan terbaik bagi masyarakat, kami hadir menyediakan produk berkualitas dengan pengerjaan rapi dan harga bersahabat. Bagi kami, kepercayaan dan kepuasan pelanggan adalah amanah utama yang selalu kami jaga sepenuh hati.",
     image: "/images/about.svg",
     highlights: [
-      "Warna tema & identitas disesuaikan dengan brand Anda",
-      "Katalog produk lengkap dengan foto & harga jelas",
-      "Tombol WhatsApp langsung terhubung ke nomor admin",
-      "Tampilan responsif, cepat, & rapi di semua smartphone",
+      "Produk & bahan pilihan bermutu tinggi",
+      "Pelayanan ramah, cepat, dan terpercaya",
+      "Pemesanan mudah langsung via WhatsApp",
+      "Harga jujur, transparan, & bersahabat",
     ],
   },
 
@@ -127,8 +127,8 @@ export const siteConfig: SiteConfig = {
   // 9. Layanan (Services) — Universal untuk segala jenis jasa / paket pemesanan
   // --------------------------------------------------------------------------
   services: {
-    title: "Contoh Layanan & Jasa",
-    subtitle: "Daftar layanan ini bisa disesuaikan dengan jenis jasa atau paket yang Anda sediakan untuk pelanggan",
+    title: "Layanan Kami",
+    subtitle: "Pilihan layanan profesional yang siap membantu memenuhi berbagai kebutuhan Anda",
     items: [
       {
         name: "Pemesanan Produk & Barang",
@@ -145,9 +145,9 @@ export const siteConfig: SiteConfig = {
         icon: "settings",
       },
       {
-        name: "Konsultasi & Layanan Cepat",
+        name: "Konsultasi & Tanya Produk",
         description:
-          "Konsultasi gratis mengenai pilihan produk terbaik dan penanganan pesanan secara responsif langsung oleh tim kami.",
+          "Konsultasi gratis mengenai rekomendasi produk terbaik dan penanganan pesanan secara ramah dan responsif.",
         price: "Gratis Konsultasi",
         icon: "wrench",
       },
@@ -158,26 +158,26 @@ export const siteConfig: SiteConfig = {
   // 10. Katalog Produk (Products) — Universal untuk produk fisik / paket
   // --------------------------------------------------------------------------
   products: {
-    title: "Contoh Katalog Produk & Paket",
-    subtitle: "Foto, nama varian, dan harga di bawah ini hanyalah contoh. Semuanya akan diganti dengan produk asli usaha Anda",
+    title: "Produk Pilihan",
+    subtitle: "Koleksi produk favorit berkualitas tinggi yang siap dipesan hari ini",
     variant: "grid",
     items: [
       {
-        name: "Paket Favorit 1",
+        name: "Paket Favorit",
         description: "Pilihan paling disukai pelanggan dengan mutu terjamin dan nilai paling ekonomis.",
         price: "Rp 45.000",
         image: "/images/products/product-1.svg",
         badge: "Paling Laris",
       },
       {
-        name: "Paket Lengkap 2",
+        name: "Paket Lengkap",
         description: "Varian lengkap dan praktis untuk memenuhi kebutuhan harian tanpa repot.",
         price: "Rp 85.000",
         image: "/images/products/product-2.svg",
         badge: "Rekomendasi",
       },
       {
-        name: "Paket Spesial 3",
+        name: "Paket Spesial",
         description: "Kombinasi eksklusif dengan kualitas pilihan dan pengerjaan ekstra teliti.",
         price: "Rp 150.000",
         image: "/images/products/product-3.svg",
@@ -208,31 +208,31 @@ export const siteConfig: SiteConfig = {
   // 11. Keunggulan (Features)
   // --------------------------------------------------------------------------
   features: {
-    title: "Keunggulan Website Usaha Anda",
-    subtitle: "Dirancang khusus agar calon pelanggan langsung percaya dan mudah order ke WhatsApp",
+    title: "Kenapa Memilih Kami?",
+    subtitle: "Komitmen kami dalam memberikan kenyamanan dan kepuasan untuk setiap pelanggan",
     items: [
       {
-        title: "Bebas Pilih Warna Tema",
+        title: "Kualitas Terjamin",
         description:
-          "Warna dominan website bisa disesuaikan dengan warna logo atau identitas brand usaha Anda agar serasi dan keren.",
-        icon: "sparkles",
-      },
-      {
-        title: "Order Langsung ke WhatsApp",
-        description:
-          "Pelanggan cukup klik tombol untuk langsung chat dengan admin Anda lengkap dengan rincian pesanan yang rapi.",
-        icon: "clock",
-      },
-      {
-        title: "Katalog & Foto Rapi",
-        description:
-          "Tampilkan foto produk asli, daftar paket, maupun menu layanan dengan harga transparan dan deskripsi jelas.",
+          "Semua produk dan layanan dipersiapkan dengan teliti menggunakan standar mutu terbaik demi kepuasan Anda.",
         icon: "shield",
       },
       {
-        title: "Cepat & Nyaman di HP",
+        title: "Respon WhatsApp Cepat",
         description:
-          "Website sangat ringan dan responsif, nyaman dibuka dari smartphone pelanggan mana pun tanpa loading lama.",
+          "Admin ramah siap menjawab pertanyaan, konsultasi, dan membantu pesanan Anda kapan saja.",
+        icon: "clock",
+      },
+      {
+        title: "Harga Jujur & Bersahabat",
+        description:
+          "Penawaran harga terbaik yang transparan dan terjangkau tanpa ada biaya tersembunyi.",
+        icon: "award",
+      },
+      {
+        title: "Pengiriman Cepat & Aman",
+        description:
+          "Melayani pengiriman ke seluruh wilayah Indonesia dengan pengemasan aman sampai tujuan.",
         icon: "thumbsup",
       },
     ],
@@ -321,8 +321,8 @@ export const siteConfig: SiteConfig = {
   // 15. Ajakan Bertindak Terakhir (Final CTA)
   // --------------------------------------------------------------------------
   finalCTA: {
-    title: "Siap Tampilkan Usaha Anda Seperti Ini?",
+    title: "Siap Memenuhi Kebutuhan Anda?",
     description:
-      "Dapatkan website profesional lengkap dengan logo brand Anda, warna pilihan Anda, katalog produk, dan tombol WhatsApp siap terima pesanan 24 jam. Hubungi kami untuk konsultasi sekarang!",
+      "Hubungi kami sekarang melalui WhatsApp. Tim kami siap merespon cepat, memberikan rekomendasi terbaik, dan membantu pesanan Anda.",
   },
 };
