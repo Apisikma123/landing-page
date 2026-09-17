@@ -1,26 +1,163 @@
 @import "tailwindcss";
 
+/* ========================================================================== */
+/* CSS Custom Properties — injected from config via layout.tsx               */
+/* ========================================================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #7C2D12;
+  --secondary: #FFF7ED;
+  --accent: #EA580C;
+  --foreground: #1C1917;
+  --muted: #78716C;
+  --background: #FFFFFF;
+  --border: #E7E5E4;
+  --card: #FFFFFF;
+  --card-hover: #FAFAF9;
 }
+
+/* ========================================================================== */
+/* Tailwind Theme Integration                                                */
+/* ========================================================================== */
 
 @theme inline {
-  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-background: var(--background);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ========================================================================== */
+/* Base Styles                                                                */
+/* ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
+  font-family: var(--font-body), system-ui, sans-serif;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* ========================================================================== */
+/* Utility Classes                                                            */
+/* ========================================================================== */
+
+.section-padding {
+  padding: 4rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 6rem 2rem;
+  }
+}
+
+.container-narrow {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========================================================================== */
+/* FAQ Accordion — pure CSS details/summary                                  */
+/* ========================================================================== */
+
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-chevron {
+  transition: transform 0.2s ease;
+}
+
+/* ========================================================================== */
+/* Mobile hamburger menu                                                      */
+/* ========================================================================== */
+
+.mobile-menu-enter {
+  animation: slideDown 0.25s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================================================== */
+/* Lightbox                                                                   */
+/* ========================================================================== */
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+dialog {
+  border: none;
+  background: transparent;
+  padding: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+/* ========================================================================== */
+/* Subtle animations                                                          */
+/* ========================================================================== */
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
